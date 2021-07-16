@@ -57,9 +57,9 @@ create table record(
 
 
 
-insert into user(id, username, password, nickname, email, age, head) values (1, 'bit', '123', '小比特', '1111@163.com', 18, 'img/test-head.jpg');
+insert into user(id, username, password, nickname, email, age, head) values (1, 'admin', '123', '张无忌', '1111@163.com', 18, 'img/test-head.jpg');
 
-## 数据字典：学生毕业年份
+## 数据字典
 insert into setting(id, user_id, batch_number) values (1, 1, 8);
 
 insert into award(name, count, award, setting_id) values ('特靠谱欢乐奖', 1, '深圳湾一号', 1);
@@ -68,7 +68,7 @@ insert into award(name, count, award, setting_id) values ('特靠谱励志奖', 
 
 
 
-## 数据字典：学生专业
+## 数据字典
 insert into member(name, no, setting_id) values ('李寻欢', '水果刀', 1);
 insert into member(name, no, setting_id) values ('郭靖', '降猪十八掌', 1);
 insert into member(name, no, setting_id) values ('韦小宝', '抓?龙爪手', 1);

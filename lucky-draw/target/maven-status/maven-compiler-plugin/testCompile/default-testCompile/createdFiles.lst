@@ -1,0 +1,10 @@
+org\example\model\Record.class
+org\example\mapper\UserMapper.class
+org\example\model\User.class
+org\example\mapper\AwardMapper.class
+org\example\model\Setting.class
+org\example\mapper\MemberMapper.class
+org\example\model\Award.class
+org\example\mapper\RecordMapper.class
+org\example\model\Member.class
+org\example\mapper\SettingMapper.class
