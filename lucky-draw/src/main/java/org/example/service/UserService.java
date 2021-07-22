@@ -44,6 +44,7 @@ public class UserService {
                 //使用上传时的图片名称保存到本地
                 String uri = "/" + uuid + "/" + headFile.getOriginalFilename();
                 //本地就是保存在headLocalPath+uri，http访问就是headRemotePath+uri
+//                String localPath = headRemotePath + uri;
                 String localPath = headLocalPath + uri;
                 //不能直接保存，因为父文件夹可能还没创建
                 File head = new File(localPath);
