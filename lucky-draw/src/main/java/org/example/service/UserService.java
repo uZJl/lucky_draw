@@ -35,6 +35,7 @@ public class UserService {
     }
 
     @Transactional
+    //默认事务的配置为Spring事务的传播特性=required，事务隔离级别为数据库的默认事务隔离级别
     public void register(User user, MultipartFile headFile) {
         try {
             //如果有上传用户头像，需要保存在服务端本地，并且部署好，能通过url访问

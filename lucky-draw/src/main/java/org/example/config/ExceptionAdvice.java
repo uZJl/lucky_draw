@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 public class ExceptionAdvice {
 
     //自定义异常报错错误码和错误消息
+    //Controller中有方法加了@ExceptionHandler之后，
+    //这个Controller其他方法中没有捕获的异常就会以参数的形式传入加了
+
     @ExceptionHandler(AppException.class)
     @ResponseBody
     public Object handle1(AppException e){
