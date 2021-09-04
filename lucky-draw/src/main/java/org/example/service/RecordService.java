@@ -14,6 +14,7 @@ public class RecordService {
     private RecordMapper recordMapper;
 
     public int add(Integer awardId, List<Integer> memberIds) {
+
         return recordMapper.batchInsert(awardId, memberIds);
     }
 

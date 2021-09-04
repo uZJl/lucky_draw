@@ -19,6 +19,7 @@ public class LoginInterceptor implements HandlerInterceptor {
     private ObjectMapper objectMapper;
 
     public LoginInterceptor(ObjectMapper objectMapper) {
+
         this.objectMapper = objectMapper;
     }
     //实现HandlerInterceptor接口并重写了preHandle方法完成登陆拦截器并区分前后端
@@ -47,7 +48,7 @@ public class LoginInterceptor implements HandlerInterceptor {
             // 能够很方便地将Java对象转为Json格式的数据，
             // 用于后端Servlet向AJAX传递Json数据，动态地将数据展示在页面上。
             String s = objectMapper.writeValueAsString(json);//序列化对象为json
-            response.setStatus(HttpStatus.UNAUTHORIZED.value());//状态信息
+            response.setStatus(HttpStatus.UNAUTHORIZED.value());//状态信息401无权限访问
             PrintWriter pw = response.getWriter();
             pw.println(s);
             pw.flush();

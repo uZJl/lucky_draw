@@ -22,7 +22,8 @@ public class RequestResponseBodyMethodProcessorWrapper implements HandlerMethodR
     @Override
     public void handleReturnValue(Object returnValue, MethodParameter returnType, ModelAndViewContainer mavContainer, NativeWebRequest webRequest) throws Exception {
         //returnValue是Controller请求方法执行完，返回值
-        if(!(returnValue instanceof JSONResponse)){//返回值本身就是需要的类型，不进行处理
+        if(!(returnValue instanceof JSONResponse)){
+            //返回值本身就是需要的类型，不进行处理
             JSONResponse json = new JSONResponse();
             json.setSuccess(true);
             json.setData(returnValue);

@@ -71,10 +71,9 @@ insert into award(name, count, award, setting_id) values ('特靠谱励志奖', 
 ## 数据字典
 insert into member(name, no, setting_id) values ('李寻欢', '水果刀', 1);
 insert into member(name, no, setting_id) values ('郭靖', '降猪十八掌', 1);
-insert into member(name, no, setting_id) values ('韦小宝', '抓?龙爪手', 1);
 insert into member(name, no, setting_id) values ('风清扬', '孤独九贱', 1);
 insert into member(name, no, setting_id) values ('哪吒', '喷气式电单车', 1);
-insert into member(name, no, setting_id) values ('渠昊空', 'no2', 1);
+insert into member(name, no, setting_id) values ('渠昊空', 'no1', 1);
 insert into member(name, no, setting_id) values ('闵觅珍', 'no2', 1);
 insert into member(name, no, setting_id) values ('慈新之', 'no3', 1);
 insert into member(name, no, setting_id) values ('户柔绚', 'no4', 1);
